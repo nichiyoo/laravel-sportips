@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', fn() => view('welcome'))->name('welcome');
-Route::get('/about', fn() => view('welcome'))->name('about');
+Route::get('/about', fn() => view('about'))->name('about');
 
 Route::middleware('auth')->group(function () {
   Route::get('/dashboard', fn() => view('dashboard'))->name('dashboard');

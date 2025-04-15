@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="csrf-token" content="{{ csrf_token() }}">
-
-  <title>{{ config('app.name', 'Laravel') }}</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.bunny.net">
-  <link href="https://fonts.bunny.net/css?family=chakra-petch:400,500,700|instrument-sans:400,500,700" rel="stylesheet" />
-
-  <!-- Resources -->
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
-  @stack('styles')
-</head>
-
-<body class="font-sans antialiased">
+<x-landing-layout>
   <div id="hero" class="h-screen relative">
     <img src="{{ asset('images/hero.jpg') }}" alt="Hero Image" class="absolute inset-0 object-cover w-full h-full">
     <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50"></div>
@@ -53,6 +34,17 @@
         </div>
       </div>
     </div>
-</body>
+  </div>
 
-</html>
+  <div class="py-20 container">
+    <header class="items-center text-center max-w-3xl mx-auto flex flex-col gap-2">
+      <h2 class="text-4xl font-semibold font-heading">
+        Master the Basics
+      </h2>
+      <p class="text-zinc-600">
+        In this article, we break down the fundamentals, making it easy for beginners to step onto the field, court, or
+        track with confidence.
+      </p>
+    </header>
+  </div>
+</x-landing-layout>

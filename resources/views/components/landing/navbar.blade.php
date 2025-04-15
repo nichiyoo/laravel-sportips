@@ -1,7 +1,7 @@
 <nav class="py-3">
   <div class="flex items-center justify-between">
     <ul class="hidden lg:flex items-center gap-10">
-      <li><a href="{{ route('welcome') }}">About</a></li>
+      <li><a href="{{ route('about') }}">About</a></li>
       <li><a href="{{ route('welcome') }}">Contact</a></li>
       <li><a href="{{ route('welcome') }}">Categories</a></li>
     </ul>
