@@ -1,7 +1,7 @@
 <x-landing-layout>
   <div id="hero" class="h-screen relative">
     <img src="{{ asset('images/hero.jpg') }}" alt="Hero Image" class="absolute inset-0 object-cover w-full h-full">
-    <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/50"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-50% from-black/0 to-black/50"></div>
 
     <div class="relative container text-zinc-50 grid h-full">
       <x-landing.navbar />
@@ -36,15 +36,32 @@
     </div>
   </div>
 
-  <div class="py-20 container">
-    <header class="items-center text-center max-w-3xl mx-auto flex flex-col gap-2">
-      <h2 class="text-4xl font-semibold font-heading">
-        Master the Basics
-      </h2>
-      <p class="text-zinc-600">
-        In this article, we break down the fundamentals, making it easy for beginners to step onto the field, court, or
-        track with confidence.
-      </p>
-    </header>
+  <div class="min-h-screen py-20 grid m-4 rounded-3xl bg-white">
+    <div class="grid items-center container">
+      <div class="grid gap-12">
+        <div class="flex items-center justify-between">
+          <h2 class="text-4xl font-heading font-medium">Master the Basics</h2>
+
+          <a href={{ route('welcome') }} class="text-sm font-medium">
+            <x-ui.cta>
+              <span>Get Started</span>
+              <i data-lucide="arrow-up-right"></i>
+            </x-ui.cta>
+          </a>
+        </div>
+
+        <x-course-grid />
+
+        <div class="flex items-center justify-between">
+          <div class="basis-1/2 flex-none"></div>
+          <div class="basis-1/2 flex-none">
+            <p class="text-zinc-500">
+              Ready to dive into a new sport but don&apos;t know where to start? In this article, we break down the
+              fundamentals, making it easy for beginners to step onto the field, court, or track with confidence
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </x-landing-layout>

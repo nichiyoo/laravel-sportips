@@ -3,7 +3,7 @@
     <ul class="hidden lg:flex items-center gap-10">
       <li><a href="{{ route('about') }}">About</a></li>
       <li><a href="{{ route('welcome') }}">Contact</a></li>
-      <li><a href="{{ route('welcome') }}">Categories</a></li>
+      <li><a href="{{ route('courses') }}">Courses</a></li>
     </ul>
 
     <a href="{{ route('welcome') }}">

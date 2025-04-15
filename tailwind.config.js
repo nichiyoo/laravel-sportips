@@ -24,6 +24,9 @@ export default {
         sans: ['var(--font-sans)', ...fontFamily.sans],
         heading: ['var(--font-heading)', ...fontFamily.serif],
       },
+      aspectRatio: {
+        frame: '3/4'
+      }
     },
   },
 

@@ -11,7 +11,7 @@
 
 @layer components {
   .bg-glass {
-    @apply border border-zinc-100/20 bg-zinc-100/10 backdrop-blur;
+    @apply border border-zinc-100/10 bg-zinc-100/10 backdrop-blur;
   }
 
   input.bg-glass {

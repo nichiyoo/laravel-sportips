@@ -17,13 +17,15 @@
   @stack('styles')
 </head>
 
-<body class="font-sans antialiased">
-  <div class="min-h-screen">
+<body class="font-sans antialiased bg-zinc-200">
+  <div class="min-h-screen grid gap-8">
     {{ $slot }}
   </div>
 
   <x-landing.newsletter />
   <x-landing.footer />
+
+  @stack('scripts')
 </body>
 
 </html>
