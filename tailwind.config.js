@@ -25,7 +25,8 @@ export default {
         heading: ['var(--font-heading)', ...fontFamily.serif],
       },
       aspectRatio: {
-        frame: '3/4'
+        frame: '3/4',
+        banner: '2/1',
       }
     },
   },
