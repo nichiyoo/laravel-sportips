@@ -12,7 +12,7 @@
 
   <x-landing.about />
 
-  <x-course-grid />
+  <x-sport-grid />
 
   <x-landing.statistic />
 

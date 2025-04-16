@@ -35,8 +35,8 @@
     <div class="block">
       <label for="remember_me" class="inline-flex items-center">
         <input id="remember_me" type="checkbox"
-          class="rounded border-zinc-300 text-primary-600 shadow-sm focus:ring-primary-500" name="remember">
-        <span class="ms-2 text-sm text-zinc-600">Remember me</span>
+          class="rounded shadow-sm border-zinc-300 text-primary-600 focus:ring-primary-500" name="remember">
+        <span class="text-sm ms-2 text-zinc-600">Remember me</span>
       </label>
     </div>
 

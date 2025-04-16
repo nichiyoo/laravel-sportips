@@ -9,5 +9,6 @@
     </x-slot>
   </x-landing.hero>
 
-  <x-course-grid />
+  <x-sport-grid />
+
 </x-landing-layout>

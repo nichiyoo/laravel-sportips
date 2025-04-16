@@ -1,9 +1,9 @@
 <nav class="py-3">
   <div class="flex items-center justify-between">
-    <ul class="hidden lg:flex items-center gap-10">
+    <ul class="items-center hidden gap-10 lg:flex">
       <li><a href="{{ route('about') }}">About</a></li>
       <li><a href="{{ route('contact') }}">Contact</a></li>
-      <li><a href="{{ route('courses') }}">Courses</a></li>
+      <li><a href="{{ route('sports') }}">Sports</a></li>
     </ul>
 
     <a href="{{ route('welcome') }}">

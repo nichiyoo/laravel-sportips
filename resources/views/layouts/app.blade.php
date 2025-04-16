@@ -17,18 +17,21 @@
   @stack('styles')
 </head>
 
-<body class="font-sans antialiased min-h-screen bg-zinc-100">
+<body class="min-h-screen font-sans antialiased bg-zinc-100">
   <x-dashboard.navbar />
 
   @isset($header)
-    <header class="bg-zinc-950 text-zinc-50 border-b border-zinc-100">
-      <div class="container max-w-7xl py-6">
+    <header class="border-b bg-zinc-950 text-zinc-50 border-zinc-100">
+      <div class="container py-6 max-w-7xl">
         <h2 class="text-xl">{{ $header }}</h2>
       </div>
     </header>
   @endisset
 
-  <main class="container max-w-7xl py-12 grid gap-8">
+  <main class="container grid gap-8 py-12 max-w-7xl">
+    <x-ui.status class="mb-4" :status="session('success')" />
+    <x-ui.status class="mb-4" :status="session('error')" />
+
     {{ $slot }}
   </main>
 </body>

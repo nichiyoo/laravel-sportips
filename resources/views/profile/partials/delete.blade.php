@@ -34,7 +34,7 @@
         @enderror
       </div>
 
-      <div class="mt-6 flex justify-end gap-2">
+      <div class="flex justify-end gap-2 mt-6">
         <x-ui.button variant="secondary" x-on:click="$dispatch('close')">
           Cancel
         </x-ui.button>
